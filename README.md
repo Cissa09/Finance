@@ -103,7 +103,3 @@ Este projeto está sob a licença **MIT**. Sinta-se à vontade para usá-lo e me
 Caso tenha dúvidas ou sugestões, entre em contato!
 💻 [Seu GitHub](https://github.com/cissa09)  
 📧 [Seu E-mail](mailto:cicero.viganon@hotmail.com)  
-
----
-
-### 🎯 Agora sua Wiki está pronta para ser adicionada ao GitHub! 🚀📖
