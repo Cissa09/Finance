@@ -32,7 +32,7 @@ cd seu-repositorio
 ```sh
 dotnet run PETR4.SA
 ```
-🔹 **Substitua `PETR4.SA` pelo código do ativo desejado.**
+🔹 **Substitua `PETR4.SA` pelo código do ativo desejado. Mas mantenha o final ".SA" que é uma sufixo utilizado pelo Yahoo**
 
 ## 3️⃣ Abrir o Excel Gerado
 📂 O arquivo será salvo na **Área de Trabalho** do usuário com o nome:
