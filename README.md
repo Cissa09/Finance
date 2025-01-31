@@ -1,6 +1,6 @@
 # 🏆 Histórico de Ações - Relatórios em Excel
 
-Este projeto busca dados históricos de ações na **Yahoo Finance API** e gera relatórios completos no **Excel**, com análise **mensal** e **anual**.
+Este projeto busca os preços históricos de uma determinada ação na **Yahoo Finance API** e gera relatórios no **Excel**, exibindo a máxima e mínima agrupados por mês dos últimos 10 anos e a máxima e mínima agrupados por ano dos últimos 20 anos.
 
 ## 📌 Funcionalidades
 ✅ Consulta automática de dados financeiros  
@@ -19,7 +19,7 @@ Este projeto busca dados históricos de ações na **Yahoo Finance API** e gera 
 
 ### 1️⃣ **Clone o repositório:**
 ```sh
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/Cissa09/Finance.git
 cd seu-repositorio
 ```
 
@@ -34,8 +34,6 @@ dotnet run PETR4.SA
 📂 O programa gera um arquivo **Excel** com duas abas:
 - **📈 Anual** → Dados agrupados por ano
 - **📊 Mensal** → Dados agrupados por mês
-
-![Exemplo de Excel Gerado](caminho-para-imagem.png)
 
 ## 🤝 Contribuições
 Quer contribuir? **Fork o projeto, abra um PR e vamos melhorar juntos!** 🚀  
