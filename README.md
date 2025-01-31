@@ -1,9 +1,9 @@
 # 📌 Visão Geral do Projeto
 
-Este projeto busca dados históricos de ações na **Yahoo Finance API** e gera relatórios completos no **Excel**, com análise **mensal** e **anual**.
+Este projeto busca dados de preços históricos de uma determinada açáo na **Yahoo Finance API** e gera um relatório no **Excel**, com análise **mensal** e **anual** das mínimas e máximas dos preços deste papel.
 
 ## 🏆 Objetivo do Projeto
-Criar um sistema modular para baixar e processar dados financeiros, permitindo a análise de **mínimos, máximos e variações percentuais** de um ativo ao longo do tempo.
+Conseguir analisar as mínimas e máximas históricas para entender os níveis de preço que um ativo se encontra em determinado momento.
 
 ## ⚙️ Tecnologias Utilizadas
 - **C# / .NET 8.0**
