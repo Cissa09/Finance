@@ -66,7 +66,7 @@ public class ProcessaDados
 
                 return (Data: dataReferencia, Minimo: min, Maximo: max, Variacao: variacao);
             })
-            .OrderBy(d => d.Data) // Ordena os resultados do mais antigo para o mais recente
+            .OrderByDescending(d => d.Data) // Ordena os resultados do mais novo para o mais antigo
             .ToList();
     }
 }
