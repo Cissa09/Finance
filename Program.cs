@@ -27,8 +27,8 @@ class Program
             ticker = args[0];
         }
 
-        // Define a data de início fixa para busca dos dados
-        DateTime startDate = new DateTime(2015, 1, 1);
+        // Define a data base de 10 anos atrás para buscar os dados
+        DateTime startDate = DateTime.Today.AddYears(-10);
 
         try
         {

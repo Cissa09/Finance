@@ -27,8 +27,8 @@ public class ProcessaDados
         var history = historyResult.Value;
 
         // Processa os dados históricos para gerar análise mensal e anual
-        var monthlyData = ProcessarDados(history, startDate, true);  // Análise mensal
-        var annualData = ProcessarDados(history, startDate, false); // Análise anual
+        var monthlyData = ProcessarDados(history, startDate, true);  // Análise mensal       
+        var annualData = ProcessarDados(history, startDate.AddYears(-10), false); // Análise anual com histórico de 20 anos.
 
         // Chama a classe Excel para gerar o arquivo com os dados processados
         string filePath = Excel.Exportar(monthlyData, annualData, ticker);
