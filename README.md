@@ -1,43 +1,106 @@
-# 🏆 Histórico de Ações - Relatórios em Excel
+# 📌 Visão Geral do Projeto
 
-Este projeto busca os preços históricos de uma determinada ação na **Yahoo Finance API** e gera relatórios no **Excel**, exibindo a máxima e mínima agrupados por mês dos últimos 10 anos e a máxima e mínima agrupados por ano dos últimos 20 anos.
+Este projeto busca dados de preços históricos de uma determinada açáo na **Yahoo Finance API** e gera um relatório no **Excel**, com análise **mensal** e **anual** das mínimas e máximas dos preços deste papel.
 
-## 📌 Funcionalidades
-✅ Consulta automática de dados financeiros  
-✅ Geração de relatórios Excel 📊  
-✅ Análise **Mensal e Anual**  
-✅ Processamento otimizado  
-✅ Código modular para fácil manutenção  
+## 🏆 Objetivo do Projeto
+Conseguir analisar as mínimas e máximas históricas para entender os níveis de preço que um ativo se encontra em determinado momento.
 
 ## ⚙️ Tecnologias Utilizadas
-- **C# / .NET**
-- **Yahoo Finance API**
-- **ClosedXML** (para geração de Excel)
-- **NodaTime** (manipulação de datas)
+- **C# / .NET 8.0**
+- **Yahoo Finance API** (dados de mercado)
+- **ClosedXML** (manipulação de arquivos Excel)
+- **NodaTime** (manipulação avançada de datas)
 
-## 🚀 Como Rodar o Projeto
+## 📂 Estrutura do Projeto
 
-### 1️⃣ **Clone o repositório:**
+O projeto está dividido em três classes principais:
+- **`Program.cs`** → Responsável por iniciar o programa e capturar os parâmetros do usuário.
+- **`ProcessaDados.cs`** → Obtém os dados do Yahoo Finance e processa a análise mensal e anual.
+- **`Excel.cs`** → Manipula a criação e exportação do arquivo Excel com os dados estruturados.
+
+---
+
+# 🚀 Como Instalar e Rodar o Projeto
+
+## 1️⃣ Clonar o Repositório
 ```sh
 git clone https://github.com/Cissa09/Finance.git
 cd seu-repositorio
 ```
 
-### 2️⃣ **Execute o projeto com o ticker desejado:**
+## 2️⃣ Executar o Projeto
 ```sh
 dotnet run PETR4.SA
 ```
+🔹 **Substitua `PETR4.SA` pelo código do ativo desejado. Mas mantenha o final ".SA" que é uma sufixo utilizado pelo Yahoo**
 
-### 3️⃣ **O Excel gerado estará na sua Área de Trabalho!** 📝📊  
+## 3️⃣ Abrir o Excel Gerado
+📂 O arquivo será salvo na **Área de Trabalho** do usuário com o nome:
+```sh
+Historico_PETR4.SA.xlsx
+```
+📊 O Excel terá **duas abas**:
+- **Mensal** → Dados agrupados por mês
+- **Anual** → Dados agrupados por ano
 
-## 💡 Exemplo de Saída no Excel:
-📂 O programa gera um arquivo **Excel** com duas abas:
-- **📈 Anual** → Dados agrupados por ano
-- **📊 Mensal** → Dados agrupados por mês
+---
 
-## 🤝 Contribuições
-Quer contribuir? **Fork o projeto, abra um PR e vamos melhorar juntos!** 🚀  
+# 📖 Explicação Técnica
 
-## 📜 Licença
-Este projeto está sob a licença **MIT**. Sinta-se à vontade para usá-lo e melhorá-lo!  
+## 📌 `Program.cs`
+Esta é a classe principal, responsável por:
+✅ Capturar o ticker do ativo via argumento ou entrada no console
+✅ Chamar a classe `ProcessaDados` para processar os dados
+✅ Exibir mensagens informando sobre o progresso e erros
 
+## 📌 `ProcessaDados.cs`
+Responsável por:
+✅ Buscar os dados históricos na **Yahoo Finance API**
+✅ Processar os valores mínimos, máximos e variação
+✅ Separar os dados em **análise mensal e anual**
+✅ Enviar os dados formatados para a classe `Excel`
+
+## 📌 `Excel.cs`
+✅ Gera o arquivo **Excel** com os dados processados
+✅ Cria **duas abas** no arquivo (`Mensal` e `Anual`)
+✅ Ajusta o formato das células para melhor visualização
+
+---
+
+# 💡 Como Contribuir
+Quer ajudar a melhorar o projeto? Siga estes passos:
+
+## 1️⃣ Fork o Repositório
+Clique em **Fork** no canto superior direito do GitHub.
+
+## 2️⃣ Clone o Repositório
+```sh
+git clone https://github.com/Cissa09/Finance.git
+cd seu-repositorio
+```
+
+## 3️⃣ Crie uma Nova Branch
+```sh
+git checkout -b minha-melhoria
+```
+
+## 4️⃣ Faça as Alterações e Envie um Pull Request
+```sh
+git add .
+git commit -m "Melhoria no processamento dos dados"
+git push origin minha-melhoria
+```
+🔹 Depois, vá até o **GitHub** e crie um **Pull Request**!
+
+---
+
+# 📜 Licença
+Este projeto está sob a licença **MIT**. Sinta-se à vontade para usá-lo e melhorá-lo! 🚀
+
+---
+
+# 📬 Contato
+Caso tenha dúvidas ou sugestões, entre em contato!
+
+💻 [Seu GitHub](https://github.com/cissa09)  
+📧 [Seu E-mail](mailto:cicero.viganon@hotmail.com)  
